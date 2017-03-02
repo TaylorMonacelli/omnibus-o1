@@ -20,9 +20,14 @@ dependency "preparation"
 
 # o1 dependencies/components
 # dependency "somedep"
+dependency "mysetup"
 
 # Version manifest file
 dependency "version-manifest"
 
 exclude "**/.git"
 exclude "**/bundler/git"
+
+package :msi do
+	upgrade_code 'A3C83F57-6D8F-453A-9559-0D650A95EB21'
+end
