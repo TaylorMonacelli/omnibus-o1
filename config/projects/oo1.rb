@@ -18,14 +18,14 @@ build_iteration 5
 # Creates required build directories
 dependency "preparation"
 
-# Version manifest file
-dependency "version-manifest"
-
 # oo1 dependencies/components
 # dependency "somedep"
 dependency "apache"
 dependency "mysql-x86"
 dependency "mysql"
+
+# Version manifest file
+dependency "version-manifest"
 
 exclude "**/.git"
 exclude "**/bundler/git"
