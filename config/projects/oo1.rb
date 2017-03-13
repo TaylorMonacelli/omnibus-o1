@@ -13,21 +13,21 @@ homepage "https://CHANGE-ME.com"
 install_dir "#{default_root}/#{name}"
 
 build_version Omnibus::BuildVersion.semver
-build_iteration 1
+build_iteration 5
 
 # Creates required build directories
 dependency "preparation"
 
-# oo1 dependencies/components
-# dependency "somedep"
-dependency "mysetup"
-
 # Version manifest file
 dependency "version-manifest"
+
+# oo1 dependencies/components
+# dependency "somedep"
+dependency "oo1"
 
 exclude "**/.git"
 exclude "**/bundler/git"
 
 package :msi do
-	upgrade_code 'A3C83F57-6D8F-453A-9559-0D650A95EB21'
+    upgrade_code 'A3C83F57-6D8F-453A-9559-0D650A95EB21'
 end
