@@ -7,4 +7,3 @@ source url: "http://installer-bin.streambox.com.s3.amazonaws.com/httpd-#{version
 build do
   copy 'Apache24', "#{install_dir}/apache"
 end
-
