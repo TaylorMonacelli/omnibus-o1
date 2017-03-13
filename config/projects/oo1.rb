@@ -20,7 +20,7 @@ dependency "preparation"
 
 # oo1 dependencies/components
 # dependency "somedep"
-dependency "mysetup"
+dependency "apache"
 
 # Version manifest file
 dependency "version-manifest"
