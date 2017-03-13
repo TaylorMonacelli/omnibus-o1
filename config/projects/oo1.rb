@@ -4,12 +4,12 @@
 # All Rights Reserved.
 #
 
-name "o1"
+name "oo1"
 maintainer "CHANGE ME"
 homepage "https://CHANGE-ME.com"
 
-# Defaults to C:/o1 on Windows
-# and /opt/o1 on all other platforms
+# Defaults to C:/oo1 on Windows
+# and /opt/oo1 on all other platforms
 install_dir "#{default_root}/#{name}"
 
 build_version Omnibus::BuildVersion.semver
@@ -18,7 +18,7 @@ build_iteration 1
 # Creates required build directories
 dependency "preparation"
 
-# o1 dependencies/components
+# oo1 dependencies/components
 # dependency "somedep"
 dependency "mysetup"
 

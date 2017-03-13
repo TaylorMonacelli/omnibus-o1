@@ -1,0 +1,9 @@
+#!/bin/sh
+#
+# Perform necessary oo1 removal steps
+# after package is uninstalled.
+#
+
+echo "oo1 has been uninstalled!"
+
+exit 0

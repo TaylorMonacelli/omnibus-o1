@@ -1,7 +1,7 @@
-o1 Omnibus project
+oo1 Omnibus project
 ==================
 This project creates full-stack platform-specific packages for
-`o1`!
+`oo1`!
 
 Installation
 ------------
@@ -19,7 +19,7 @@ Usage
 You create a platform-specific package using the `build project` command:
 
 ```shell
-$ bin/omnibus build o1
+$ bin/omnibus build oo1
 ```
 
 The platform/architecture type of the package created will match the platform
@@ -33,15 +33,15 @@ You can clean up all temporary files generated during the build process with
 the `clean` command:
 
 ```shell
-$ bin/omnibus clean o1
+$ bin/omnibus clean oo1
 ```
 
 Adding the `--purge` purge option removes __ALL__ files generated during the
-build including the project install directory (`/opt/o1`) and
+build including the project install directory (`/opt/oo1`) and
 the package cache directory (`/var/cache/omnibus/pkg`):
 
 ```shell
-$ bin/omnibus clean o1 --purge
+$ bin/omnibus clean oo1 --purge
 ```
 
 ### Publish
@@ -110,10 +110,10 @@ section:
 
 ```shell
 $ bundle exec kitchen login ubuntu-1204
-[vagrant@ubuntu...] $ cd o1
+[vagrant@ubuntu...] $ cd oo1
 [vagrant@ubuntu...] $ bundle install
 [vagrant@ubuntu...] $ ...
-[vagrant@ubuntu...] $ bin/omnibus build o1
+[vagrant@ubuntu...] $ bin/omnibus build oo1
 ```
 
 For a complete list of all commands and platforms, run `kitchen list` or

@@ -5,7 +5,7 @@ driver:
     cpus: 2
     memory: 2048
   synced_folders:
-    - ['.', '/home/vagrant/o1']
+    - ['.', '/home/vagrant/oo1']
 
 provisioner:
   name: chef_zero
@@ -41,4 +41,4 @@ suites:
         build_user:          vagrant
         build_user_group:    vagrant
         build_user_password: vagrant
-        install_dir:         /opt/o1
+        install_dir:         /opt/oo1

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# Perform necessary o1 setup steps
+# Perform necessary oo1 setup steps
 # after package is installed.
 #
 
@@ -12,6 +12,6 @@ error_exit()
   exit 1
 }
 
-echo "Thank you for installing o1!"
+echo "Thank you for installing oo1!"
 
 exit 0
