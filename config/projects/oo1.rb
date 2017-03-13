@@ -31,5 +31,5 @@ exclude "**/.git"
 exclude "**/bundler/git"
 
 package :msi do
-    upgrade_code 'A3C83F57-6D8F-453A-9559-0D650A95EB21'
+	upgrade_code 'A3C83F57-6D8F-453A-9559-0D650A95EB21'
 end
