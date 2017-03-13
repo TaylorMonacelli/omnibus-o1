@@ -20,7 +20,9 @@ dependency "preparation"
 
 # oo1 dependencies/components
 # dependency "somedep"
-dependency "oo1"
+dependency "apache"
+dependency "mysql-x86"
+dependency "mysql"
 
 # Version manifest file
 dependency "version-manifest"
