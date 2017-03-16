@@ -17,5 +17,6 @@ end
 source url: "http://installer-bin.streambox.com.s3.amazonaws.com/httpd-#{version}-#{arch_suffix}-#{vc}.zip"
 
 build do
+  delete "Apache24/manual"
   copy "Apache24", "#{install_dir}/apache"
 end
