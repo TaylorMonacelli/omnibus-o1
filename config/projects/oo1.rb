@@ -20,7 +20,7 @@ dependency "preparation"
 
 # oo1 dependencies/components
 # dependency "somedep"
-dependency "apache"
+dependency "dirmonitor"
 
 # Version manifest file
 dependency "version-manifest"
