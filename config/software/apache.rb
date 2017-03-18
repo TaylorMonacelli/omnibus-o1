@@ -17,6 +17,14 @@ end
 source url: "http://installer-bin.streambox.com.s3.amazonaws.com/httpd-#{version}-#{arch_suffix}-#{vc}.zip"
 
 build do
+  delete "Apache24/logs/install.log"
+  delete "Apache24/lib"
+  delete "Apache24/*.txt"
+  delete "Apache24/include"
+  delete "Apache24/bin/iconv"
+  delete "Apache24/icons"
+  delete "Apache24/error"
+  delete "Apache24/cgi-bin"
   delete "Apache24/manual"
   copy "Apache24", "#{install_dir}/apache"
 end
