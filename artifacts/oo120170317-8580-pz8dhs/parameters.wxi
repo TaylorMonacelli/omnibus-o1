@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include>
+  <?define VersionNumber="0.0.0.1" ?>
+  <?define DisplayVersionNumber="0.0.0" ?>
+  <?define UpgradeCode="A3C83F57-6D8F-453A-9559-0D650A95EB21" ?>
+</Include>

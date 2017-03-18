@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="PROJECTLOCATION">
+            <Directory Id="dirAACB971AAE53CD846725B5E3EF1FFD5C" Name="bin" />
+            <Directory Id="dir2B92779040616ED084478A6107483CCC" Name="embedded" />
+            <Directory Id="dir8383116677BAC657AD437300FE20A3F6" Name="LICENSES" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="ProjectDir">
+            <Component Id="cmp06BD3E310876AA35F373AB403C87C330" Directory="PROJECTLOCATION" Guid="{56FEBB9B-E029-41CD-BF16-234722B88BBF}">
+                <File Id="filD50B7717778AA3E717121915B2A4F4A1" KeyPath="yes" Source="$(var.ProjectSourceDir)\LICENSE" />
+            </Component>
+            <Component Id="cmp5C5E7D74B87AB7E9CE1C9C4EB312642B" Directory="PROJECTLOCATION" Guid="{A8040E7C-A7F6-4945-BD5C-FDD2C7AE76FA}">
+                <File Id="filEB75F0171D071FF804731696F975D2EF" KeyPath="yes" Source="$(var.ProjectSourceDir)\version-manifest.json" />
+            </Component>
+            <Component Id="cmpFEC7A025BF301BF73E52643737BFD91F" Directory="PROJECTLOCATION" Guid="{A7AE8F9E-EB51-4557-962B-F6E87BCBC8BC}">
+                <File Id="fil38E59CCCB26E3CDDBF0AC3F2487089A2" KeyPath="yes" Source="$(var.ProjectSourceDir)\version-manifest.txt" />
+            </Component>
+            <Component Id="cmpAEF0F0EB36C3B7E31B3063CB9AAAF16E" Directory="dirAACB971AAE53CD846725B5E3EF1FFD5C" Guid="{6355CB0F-485D-4707-94FE-1B9614AA2CA0}">
+                <File Id="fil1C5E98BDB9896B89D63A74B382BC5101" KeyPath="yes" Source="$(var.ProjectSourceDir)\bin\.gitkeep" />
+            </Component>
+            <Component Id="cmp14E28C6FC305F8AE29589FA303F1A880" Directory="dirAACB971AAE53CD846725B5E3EF1FFD5C" Guid="{45927F1B-277C-4680-BE44-364994676110}">
+                <File Id="fil1906F190E3CFD86950DC89A48BBC6586" KeyPath="yes" Source="$(var.ProjectSourceDir)\bin\DirectoryMonitoring.exe" />
+            </Component>
+            <Component Id="cmp390E47F8883EAD698755E11577A16DF8" Directory="dirD03967F9EA2DFC55D0AC815A52A5322A" Guid="{D68C1FD2-B0CB-4193-B05D-66BEFD141D64}">
+                <File Id="fil6AF2271B6EFC7B45F5F44BD7F727B8F0" KeyPath="yes" Source="$(var.ProjectSourceDir)\embedded\bin\.gitkeep" />
+            </Component>
+            <Component Id="cmpF5254490ABB61E6FA8E92302EA529A9D" Directory="dir70DE8E682EF70566B91A563C74C72476" Guid="{788DF3DF-0367-472E-8A27-3EB025751318}">
+                <File Id="fil441CA67FEF562A3D2E54A7BD2050EEDC" KeyPath="yes" Source="$(var.ProjectSourceDir)\embedded\lib\.gitkeep" />
+            </Component>
+            <Component Id="cmpB92F94653588BF1767696BA965ABEA27" Directory="dir8383116677BAC657AD437300FE20A3F6" Guid="{9943EB30-2F4C-45A8-A6EC-2009640C1C28}">
+                <File Id="fil54CA83F910441401C86736344A34E771" KeyPath="yes" Source="$(var.ProjectSourceDir)\LICENSES\.gitkeep" />
+            </Component>
+        </ComponentGroup>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir2B92779040616ED084478A6107483CCC">
+            <Directory Id="dir70DE8E682EF70566B91A563C74C72476" Name="lib" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir2B92779040616ED084478A6107483CCC">
+            <Directory Id="dirD03967F9EA2DFC55D0AC815A52A5322A" Name="bin" />
+        </DirectoryRef>
+    </Fragment>
+</Wix>
