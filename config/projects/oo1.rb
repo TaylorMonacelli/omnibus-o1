@@ -10,7 +10,7 @@ homepage "https://CHANGE-ME.com"
 
 # Defaults to C:/oo1 on Windows
 # and /opt/oo1 on all other platforms
-install_dir "#{default_root}/#{name}"
+install_dir "C:/Program Files/#{name}"
 
 build_version Omnibus::BuildVersion.semver
 build_iteration 1
